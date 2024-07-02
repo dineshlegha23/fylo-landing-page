@@ -77,6 +77,9 @@ button {
 }
 
 @media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
   .container {
     padding: 2rem;
   }
@@ -130,6 +133,9 @@ nav {
   .main-section {
     flex-direction: column-reverse;
     gap: 50px;
+    & > img {
+      width: 80%;
+    }
   }
 }
 
@@ -240,6 +246,10 @@ nav {
 @media screen and (max-width: 700px) {
   .features {
     flex-direction: column-reverse;
+
+    & > img {
+      width: 80%;
+    }
   }
 
   .features-description {
