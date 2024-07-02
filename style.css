@@ -403,6 +403,12 @@ nav {
   }
 }
 
+@media screen and (max-width: 332px) {
+  .footer-links {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .bg-red {
   background-color: red;
 }
