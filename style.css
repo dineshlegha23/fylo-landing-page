@@ -248,6 +248,7 @@ nav {
     flex-direction: column-reverse;
 
     & > img {
+      margin-bottom: 50px;
       width: 80%;
     }
   }
