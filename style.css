@@ -33,6 +33,37 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
+i {
+  /* width: 40px; */
+  /* height: 40px; */
+  color: white;
+  border-radius: 100%;
+  padding: 15px;
+  border: 2px solid white;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
 button {
   width: 60%;
   background-color: var(--clr-bright-blue);
@@ -48,9 +79,13 @@ button {
   }
 }
 
+.container {
+  padding: 2rem 4rem;
+  max-width: 1440px;
+}
+
 body {
   font-family: "Open Sans", serif;
-  padding: 2rem 4rem;
 }
 
 nav {
@@ -194,7 +229,7 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 15rem;
-  padding: 5rem 0;
+  padding-block: 5rem;
   background-color: var(--clr-desaturated-blue);
   color: white;
 
@@ -224,4 +259,52 @@ nav {
       color: var(--clr-light-gray);
     }
   }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 100%;
+  padding-block: 6rem;
+  /* padding: 6rem 0; */
+  background-color: var(--clr-dark-blue);
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.footer-contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-links {
+  margin-top: 90px;
+  margin-left: -170px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+
+  li {
+    cursor: pointer;
+    &:hover {
+      color: var(--clr-bright-blue);
+    }
+  }
+}
+
+.facebook {
+  height: 50px;
+  width: 50px;
+  padding-left: 18px;
+}
+
+.social-links {
+  &:hover {
+    background-color: var(--clr-bright-blue);
+  }
+}
+
+.bg-red {
+  background-color: red;
 }

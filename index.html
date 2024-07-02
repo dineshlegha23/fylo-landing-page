@@ -14,6 +14,10 @@
 
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       .attribution {
         font-size: 11px;
@@ -25,7 +29,7 @@
     </style>
   </head>
   <body>
-    <nav>
+    <nav class="container">
       <img src="./images/logo.svg" alt="Fylo logo" />
       <ul class="navlinks">
         <li>Features</li>
@@ -34,7 +38,7 @@
       </ul>
     </nav>
 
-    <main class="main-section">
+    <main class="main-section container">
       <section class="main-section-left">
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>
@@ -50,7 +54,7 @@
       <img src="./images/illustration-1.svg" alt="illustration" />
     </main>
 
-    <section class="features">
+    <section class="features container">
       <div class="features-left">
         <h2>Stay productive, wherever you are</h2>
         <div class="features-description">
@@ -91,7 +95,8 @@
       <img src="./images//illustration-2.svg" alt="" />
     </section>
 
-    <section class="contact">
+    <section class="contact container">
+      <!-- <div class="container"> -->
       <div class="contact-left">
         <h2>Get early access today</h2>
         <p class="contact-description">
@@ -104,18 +109,57 @@
         <input type="text" placeholder="email@example.com" />
         <button>Get Started For Free</button>
       </div>
+      <!-- </div> -->
     </section>
 
-    Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us
-    Terms Privacy
-
     <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
+      <div class="container footer">
+        <div class="footer-contact-section">
+          <img
+            src="./images/logo.svg"
+            alt="fylo logo"
+            width="200"
+            class="fylo-logo"
+          />
+          <div class="flex gap-10">
+            <img
+              src="./images/icon-phone.svg"
+              width="15"
+              height="15"
+              alt="phone logo"
+            />
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="flex gap-10">
+            <img
+              src="./images/icon-email.svg"
+              width="15"
+              height="15"
+              alt="email logo"
+            />
+            <p>example@fylo.com</p>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <ul class="flex-col gap-15">
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+          </ul>
+          <ul class="flex-col gap-15">
+            <li>Contact US</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+          <ul class="flex gap-10">
+            <li><i class="fa fa-facebook facebook social-links"></i></li>
+            <li><i class="fa fa-twitter social-links"></i></li>
+            <li><i class="fa fa-linkedin social-links"></i></li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
